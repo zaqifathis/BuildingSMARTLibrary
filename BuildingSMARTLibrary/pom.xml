@@ -76,7 +76,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.9.1</version>
+						<version>3.11.2</version>
 						<executions>
 							<execution>
 								<id>attach-javadocs</id>
@@ -85,6 +85,9 @@
 								</goals>
 							</execution>
 						</executions>
+						<configuration>
+							<doclint>none</doclint>
+						</configuration>
 					</plugin>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -105,9 +108,9 @@
 	</profiles>
 	<dependencies>
 		<dependency>
-			<groupId>org.antlr</groupId>
-			<artifactId>antlr-complete</artifactId>
-			<version>3.5.3</version>
+			<groupId>antlr</groupId>
+			<artifactId>antlr</artifactId>
+			<version>2.7.7</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.xmlbeans</groupId>
